@@ -78,7 +78,7 @@ function ProtectedRoute({ children }) {
       } else if (response.data.role === 'partner') {
         navigate("/partner");
       } else {
-        navigate("/profile");
+        navigate("/");
       }
       dispatch(setUser(response.data));
       dispatch(hideLoading());
