@@ -46,6 +46,7 @@ const BookShow = () => {
           </p>
           <div className="screen-div"></div>
         </div>
+        <div className="d-flex justify-content-between w-100 max-width-600 mx-auto mb-25px mt-3">
         <ul className="seat-ul justify-content-center">
           {Array.from(Array(rows).keys()).map((row) => {
             return Array.from(Array(columns).keys()).map((column) => {
@@ -106,7 +107,7 @@ const BookShow = () => {
             });
           })}
         </ul>
-
+        </div>
         <div className="d-flex bottom-card justify-content-between w-100 max-width-600 mx-auto mb-25px mt-3">
           <div className="flex-1">
             Selected Seats: <span>{selectedSeats.join(", ")}</span>
