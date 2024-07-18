@@ -22,10 +22,7 @@ const Home = () => {
         }
       });
 
-      if(user.data.data.role === "partner" || user.data.data.role === "admin"){
-        navigate("/partner");
-        message.error("You are not allowed to access this page");
-      }
+      navigate("/");
 
       dispatch(showLoading());
       const response = await getAllMovies();
